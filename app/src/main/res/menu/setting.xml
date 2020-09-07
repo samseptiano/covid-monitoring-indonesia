@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="AlwaysShowAction">
+    <!--<item-->
+        <!--android:id="@+id/about"-->
+        <!--android:title="About"-->
+        <!--app:showAsAction="never"/>-->
+
+    <item
+        android:id="@+id/mi_search"
+        android:title="search something"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        />
+
+    <group android:id="@+id/grp1">
+    <item
+        android:id="@+id/about"
+        android:title="Tentang..."
+        app:showAsAction="never" />
+<!--    <item-->
+<!--        android:id="@+id/guideline"-->
+<!--        android:title="Panduan"-->
+<!--        app:showAsAction="never" />-->
+</group>
+    <group android:id="@+id/grp2">
+    <item
+        android:id="@+id/logout"
+        android:title="Keluar"
+        app:showAsAction="never"/>
+    </group>
+   </menu>

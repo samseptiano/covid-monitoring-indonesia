@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/corona" />
+    <TextView
+    android:layout_width="match_parent"
+    android:textAlignment="center"
+    android:textSize="25sp"
+    android:textStyle="bold"
+        android:layout_marginTop="15dp"
+    android:layout_height="wrap_content"
+    android:text="@string/app_name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="@string/ownerName" />
+    </LinearLayout>
+</LinearLayout>

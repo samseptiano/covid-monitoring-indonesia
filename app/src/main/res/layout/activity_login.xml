@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="60dp"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/corona"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            style="@style/viewParent"
+            android:text="@string/login"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputEmail"
+            style="@style/parent.TextLayout"
+            android:layout_marginTop="16dp">
+            <EditText
+                android:id="@+id/edtUserName"
+                style="@style/modifiedEditText"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            style="@style/parent.TextLayout"
+            android:layout_marginTop="16dp">
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/modifiedEditText"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_login_button"
+            android:layout_gravity="right"/>
+
+
+    </LinearLayout>
+</LinearLayout>

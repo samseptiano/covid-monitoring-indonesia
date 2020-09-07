@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="5dp"
+        android:layout_marginBottom="0dp"
+        card_view:cardCornerRadius="5dp"
+        android:outlineSpotShadowColor="@color/black"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:background="@drawable/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProvinceName"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Province Name" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/red"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="Confirmed" />
+                        <TextView
+                            android:id="@+id/tvConfirmed"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="n/a" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/green"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Recovered" />
+                    <TextView
+                        android:id="@+id/tvRecovered"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="n/a" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Death" />
+                    <TextView
+                        android:id="@+id/tvDeath"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="n/a" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

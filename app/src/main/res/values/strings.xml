@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Covid App</string>
+
+    <string name="sortByProvince">Sort By Province Name</string>
+    <string name="sortByConfirmed">Sort By Most Confirmed</string>
+    <string name="login">Login</string>
+
+    <string name="username">username</string>
+    <string name="password">password</string>
+
+    <string name="ownerName">by Samuel Septiano</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="double_margin">32dp</string>
+    <string name="margin">16dp</string>
+    <string name="half_margin">8dp</string>
+
+    <string name="text_size">12sp</string>
+
+</resources>
