@@ -8,13 +8,18 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+    - name: Set output
+      id: vars
+      run: echo ::set-output name=short_ref::${GITHUB_REF#refs/*/}
+    - name: Check output
+      run: echo ${{ steps.vars.outputs.short_ref }}
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_CHANNEL: sample-cicd
         SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
         SLACK_ICON: https://github.com/rtCamp.png?size=48
-        SLACK_MESSAGE: 'Branch ${GITHUB_REF##*/} Pushed! :rocket:'
-        SLACK_TITLE: Branch ${GITHUB_REF##*/}
+        SLACK_MESSAGE: 'Branch ${{ steps.vars.outputs.short_ref }} Pushed! :rocket:'
+        SLACK_TITLE: Branch ${{ steps.vars.outputs.short_ref }}
         SLACK_USERNAME: Bot Goblog
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
