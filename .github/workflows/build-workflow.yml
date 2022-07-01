@@ -1,5 +1,5 @@
 
-name: Android CI // workflow name /*https://www.geeksforgeeks.org/github-actions-for-android/*/
+name: Android Build Wokrflow // workflow name /*https://www.geeksforgeeks.org/github-actions-for-android/*/
 
 on:
   push:
