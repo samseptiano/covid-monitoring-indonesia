@@ -10,17 +10,11 @@ jobs:
     - uses: actions/checkout@v2
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
-    - name: Get Branch
-      run: |
-         raw=$(git branch -r --contains ${{ github.ref }})
-         branch=${raw/origin\/}
-         echo ::set-env name=BRANCH::$branch
-    - run: echo ${{ env.BRANCH }}
       env:
         SLACK_CHANNEL: sample-cicd
         SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
         SLACK_ICON: https://github.com/rtCamp.png?size=48
-        SLACK_MESSAGE: 'Branch ${{ env.BRANCH }} Pushed! :rocket:'
-        SLACK_TITLE: Branch ${{ env.BRANCH }}
+        SLACK_MESSAGE: 'Branch ${GITHUB_REF##*/} Pushed! :rocket:'
+        SLACK_TITLE: Branch ${GITHUB_REF##*/}
         SLACK_USERNAME: Bot Goblog
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
