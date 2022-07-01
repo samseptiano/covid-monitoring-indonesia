@@ -1,4 +1,6 @@
-name: Android CI //worklong name
+/*https://www.geeksforgeeks.org/github-actions-for-android/*/
+
+name: Android CI // workflow name 
 
 on:
   push:
