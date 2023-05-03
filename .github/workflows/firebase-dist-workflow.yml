@@ -18,5 +18,5 @@ jobs:
         with:
           app_id: ${{secrets.FIREBASE_APP_ID}}
           firebase_token: ${{secrets.FIREBASE_TOKEN}}
-          app_file: app-release-ac-signed.apk
+          app_file: apk/app-debug.apk
           tester_groups: maintainers
