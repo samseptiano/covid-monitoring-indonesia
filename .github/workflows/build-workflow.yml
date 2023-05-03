@@ -1,5 +1,5 @@
 
-name: Android Build Wokrflow // workflow name /*https://www.geeksforgeeks.org/github-actions-for-android/*/
+/*name: Android Build Wokrflow // workflow name /*https://www.geeksforgeeks.org/github-actions-for-android/*/
 
 on:
   push:
@@ -31,3 +31,4 @@ jobs:
       with:
           name: app
           path: app/build/outputs/apk/debug/app-debug.apk
+          */
